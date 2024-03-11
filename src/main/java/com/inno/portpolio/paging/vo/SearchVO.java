@@ -1,4 +1,9 @@
-package com.inno.portpolio.main.service;
+package com.inno.portpolio.paging.vo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+
 /**
 * @author 연구개발 5팀 사원 김재성
 * @since 2024. 03. 11.
@@ -12,6 +17,10 @@ package com.inno.portpolio.main.service;
 * Copyright (c) 2024 by INNOVATION-T All right reserved
 * </pre>
 */
-public interface MainService {
-
+@Data
+@AllArgsConstructor
+public class SearchVO {
+	
+	private String searchType;
+	private String searchWord;
 }

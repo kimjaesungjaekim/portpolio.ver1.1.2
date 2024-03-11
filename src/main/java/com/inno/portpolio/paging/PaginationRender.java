@@ -1,4 +1,7 @@
-package com.inno.portpolio.main.service;
+package com.inno.portpolio.paging;
+
+import com.inno.portpolio.paging.vo.PaginationInfo;
+
 /**
 * @author 연구개발 5팀 사원 김재성
 * @since 2024. 03. 11.
@@ -12,6 +15,13 @@ package com.inno.portpolio.main.service;
 * Copyright (c) 2024 by INNOVATION-T All right reserved
 * </pre>
 */
-public interface MainService {
 
+public interface PaginationRender {
+	
+	/**
+	 * PaginationInfo의 프로퍼티(startPage~endPage)에 따라 링크를 생성
+	 * @param paging
+	 * @return
+	 */
+	public String renderPagination(PaginationInfo<?> paging);
 }
